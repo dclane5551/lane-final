@@ -1,0 +1,247 @@
+:root {
+    --honey: #FADA7A;
+    --sand: #F5F0CD;
+    --ltblue: #578FCA;
+    --dkblue: #3674B5;
+    --gray: #808080;
+    --white: #FFFFFF;
+    --black: #000000;
+    --font-stack: 'Roboto', 'Matangi', 'Gilda Display', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Matangi', 'Gilda Display', sans-serif;
+    line-height: 1.6;
+    color: var(--ltblue);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--sand);
+    border-bottom: 1px solid var(--gray);
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--ltblue);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--ltblue);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    padding: 20px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--white);
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.text-block {
+    margin-bottom: 40px;
+}
+
+.text-block h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--dkblue);
+}
+
+.two-column-layout {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.column {
+    flex: 1;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.column h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: var(--dkblue);
+}
+
+section#contact {
+    padding: 20px 0;
+}
+
+section#contact h2 {
+    color: var(--dkblue);
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+section#contact p {
+    color: var(--ltblue);
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.contact-content-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+section#contact img {
+    width: 350px;
+    height: 455px;
+    object-fit: cover;
+    border: 1px solid var(--gray);
+    flex-shrink: 0;
+}
+
+section#contact > form {
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--black);
+    font-size: 0.9em;
+}
+
+form input[type="text"], form input[type="email"], form input[type="tel"],form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    font-size: 1em;
+    color: var(--black);
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+form legend {
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+form fieldset label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+form input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--ltblue);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+}
+
+form input[type="radio"]:checked {
+    background-color: var(--ltblue);
+}
+
+form input[type="radio"]:checked::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form button[type="submit"] {
+    background-color: var(--dkblue);
+    color: var(--white);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+form button[type="submit"]:hover {
+    background-color: var(--ltblue);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--sand);
+    color: var(--ltblue);
+    font-size: 14px;
+    border-top: 1px solid var(--gray);
+}
